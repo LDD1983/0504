@@ -6,26 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- cdnjs - normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         div {
             width: 100vw;
-            height: 100vh;
+            height: 50px;
             background-color: aqua;   
             background-image: url();        
+        }
+        h1{
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
+    
 
     <div>
+        
 
     </div>
-    <h1>test</h1>
 
+    <!-- 綁定id -->
+    
+    <h1 id="h1">hello js</h1>
+
+
+    <!-- /body 上面 -->
+
+    <script>
+        // 先寫 HTML 再 CSS 再 JS
+        // 用選的
+        // 指定 id
+        // innerText 文字更換
+        // style = css
+        document.getElementById('h1').innerText = "Hello World JavaScript 您好";
+        document.getElementById('h1').style.color = 'pink';
+        document.getElementById('h1').style.textAlign = 'center';
+    </script>
 </body>
 
 </html>
